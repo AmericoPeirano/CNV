@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="BoletadeVentas.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/Base.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style2
+        {
+            height: 82px;
+            text-align: left;
+            width: 820px;
+        }
+        .style3
+        {
+            width: 820px;
+        }
+    </style>
+</head>
+<body style="background-image: url('/Imagenes/bg.jpg')">
+    <form id="form1" runat="server">    
+        <table style="width:1080px; height:100%;" align="center" bgcolor="White">
+            <tr>
+                <td class="style2" style="background-image: url('/Imagenes/banner.jpg')">
+                
+                    <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Imagenes/logo_glgroup.png" />
+                </td>
+            </tr>
+          
+            <tr>
+                <td class="style3" style="height: 100%" bgcolor="White" align="center">
+
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+
+    </form>
+</body>
+</html>

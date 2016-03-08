@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{353D0DFB-C6E6-4862-9190-B9B7459CBB0D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoletadeVentas</RootNamespace>
+    <AssemblyName>BoletadeVentas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acusete.aspx" />
+    <Content Include="Consulta.aspx" />
+    <Content Include="Css\Base.css" />
+    <Content Include="Css\jquery.ui.all.css" />
+    <Content Include="Css\start\images\animated-overlay.gif" />
+    <Content Include="Css\start\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="Css\start\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Css\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="Css\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="Css\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="Css\start\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="Css\start\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="Css\start\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="Css\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Css\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="Css\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="Css\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Css\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Css\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="Css\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Css\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="Css\start\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Css\start\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Detalle Boleta.aspx" />
+    <Content Include="Despacho.aspx" />
+    <Content Include="Administrar.aspx" />
+    <Content Include="ExporExcel.aspx" />
+    <Content Include="ExportLog.aspx" />
+    <Content Include="graficosaspx.aspx" />
+    <Content Include="Imagenes\img_checkDespacho.png" />
+    <Content Include="Imagenes\parcial.png" />
+    <Content Include="Imagenes\ST.png" />
+    <Content Include="Informe_Departamentos.aspx" />
+    <Content Include="Reporte.aspx" />
+    <Content Include="Imagenes\banner.jpg" />
+    <Content Include="Imagenes\bg.jpg" />
+    <Content Include="Imagenes\botonIngresar.png" />
+    <Content Include="Imagenes\cerrar.png" />
+    <Content Include="Imagenes\login.png" />
+    <Content Include="Mapa.aspx" />
+    <Content Include="Imagenes\Ball_Blue.jpg" />
+    <Content Include="Imagenes\Ball_Blue_Lab.jpg" />
+    <Content Include="Imagenes\Ball_Green.jpg" />
+    <Content Include="Imagenes\Ball_Green_Ok.jpg" />
+    <Content Include="Imagenes\Ball_Red.jpg" />
+    <Content Include="Imagenes\Ball_Red_P.jpg" />
+    <Content Include="Imagenes\Ball_Yellow.jpg" />
+    <Content Include="Imagenes\Ball_Yellow_2.jpg" />
+    <Content Include="Imagenes\Blanco.png" />
+    <Content Include="Imagenes\Calendario.png" />
+    <Content Include="Imagenes\fac.png" />
+    <Content Include="Imagenes\green-icon.png" />
+    <Content Include="Imagenes\icon-green-check.png" />
+    <Content Include="Imagenes\img_check.png" />
+    <Content Include="Imagenes\info.png" />
+    <Content Include="Imagenes\lab.png" />
+    <Content Include="Imagenes\lab_ok.png" />
+    <Content Include="Imagenes\logo_glgroup.png" />
+    <Content Include="Imagenes\office.png" />
+    <Content Include="Imagenes\ok.png" />
+    <Content Include="Imagenes\Question.png" />
+    <Content Include="Imagenes\R.png" />
+    <Content Include="Imagenes\T.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\Exp_Regulares.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.ui.button.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.dialog.js" />
+    <Content Include="Scripts\jquery.ui.draggable.js" />
+    <Content Include="Scripts\jquery.ui.mouse.js" />
+    <Content Include="Scripts\jquery.ui.position.js" />
+    <Content Include="Scripts\jquery.ui.resizable.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\json_parse.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acusete.aspx.cs">
+      <DependentUpon>Acusete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acusete.aspx.designer.cs">
+      <DependentUpon>Acusete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Administracion.cs" />
+    <Compile Include="Class\AdministracionDB.cs" />
+    <Compile Include="Class\Datos.cs" />
+    <Compile Include="Class\DatosDespacho.cs" />
+    <Compile Include="Class\ErrorReporte.cs" />
+    <Compile Include="Class\LogReporte.cs" />
+    <Compile Include="Class\Negocio.cs" />
+    <Compile Include="Class\NegocioDespacho.cs" />
+    <Compile Include="Class\NegocioError.cs" />
+    <Compile Include="Class\NegocioLOG.cs" />
+    <Compile Include="Class\NegocioReporte.cs" />
+    <Compile Include="Class\ReporteDB.cs" />
+    <Compile Include="Data\Administracion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Administracion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ControlError.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlError.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Notas_Control.cs">
+      <DependentUpon>Notas_Control.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\Notas_Control.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Notas_Control.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Personal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Personal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Reporte.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle Boleta.aspx.cs">
+      <DependentUpon>Detalle Boleta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalle Boleta.aspx.designer.cs">
+      <DependentUpon>Detalle Boleta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Despacho.aspx.cs">
+      <DependentUpon>Despacho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Despacho.aspx.designer.cs">
+      <DependentUpon>Despacho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar.aspx.cs">
+      <DependentUpon>Administrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrar.aspx.designer.cs">
+      <DependentUpon>Administrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExporExcel.aspx.cs">
+      <DependentUpon>ExporExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExporExcel.aspx.designer.cs">
+      <DependentUpon>ExporExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportLog.aspx.cs">
+      <DependentUpon>ExportLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportLog.aspx.designer.cs">
+      <DependentUpon>ExportLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="graficosaspx.aspx.cs">
+      <DependentUpon>graficosaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="graficosaspx.aspx.designer.cs">
+      <DependentUpon>graficosaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_Departamentos.aspx.cs">
+      <DependentUpon>Informe_Departamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informe_Departamentos.aspx.designer.cs">
+      <DependentUpon>Informe_Departamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mapa.aspx.cs">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mapa.aspx.designer.cs">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\postback.browser">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Data\Administracion.xsc">
+      <DependentUpon>Administracion.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Administracion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Administracion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\Administracion.xss">
+      <DependentUpon>Administracion.xsd</DependentUpon>
+    </None>
+    <None Include="Data\ControlError.xsc">
+      <DependentUpon>ControlError.xsd</DependentUpon>
+    </None>
+    <None Include="Data\ControlError.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlError.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\ControlError.xss">
+      <DependentUpon>ControlError.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Notas_Control.xsc">
+      <DependentUpon>Notas_Control.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Notas_Control.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Notas_Control.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\Notas_Control.xss">
+      <DependentUpon>Notas_Control.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Personal.xsc">
+      <DependentUpon>Personal.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Personal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Personal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\Personal.xss">
+      <DependentUpon>Personal.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Reporte.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Reporte.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReporteBodega.rdlc" />
+    <EmbeddedResource Include="ReporteDepartamentos.rdlc" />
+    <None Include="Data\Reporte.dbml.layout">
+      <DependentUpon>Reporte.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60911</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

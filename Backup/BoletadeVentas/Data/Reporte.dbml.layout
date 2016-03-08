@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 18.875" name="Reporte">
+  <DataContextMoniker Name="/ReporteDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b4a02958-7821-4a0c-b32a-25f1b22df4e5" absoluteBounds="2.875, 1.75, 2, 9.2706526692708326">
+      <DataClassMoniker Name="/ReporteDataContext/NOTV_control" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83235e4f-bb32-4455-ab4e-6945b175ea05" absoluteBounds="2.89, 2.21, 1.9700000000000002, 8.7106526692708321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e67c03f-334c-400e-a401-a22f86a346db" absoluteBounds="7.5, 2.375, 2, 10.0398583984375">
+      <DataClassMoniker Name="/ReporteDataContext/NOTV_DB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82c6f466-ac50-4424-bc7d-8f4f681149c2" absoluteBounds="7.515, 2.835, 1.9700000000000002, 9.4798583984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c87a34f4-b432-4ad9-ba02-c793a568831b" absoluteBounds="0.5, 2, 2, 16.578107096354167">
+      <DataClassMoniker Name="/ReporteDataContext/CLIEN_DB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67a40f97-9e0e-4bf3-9a3a-d6d9e5c062df" absoluteBounds="0.515, 2.46, 1.9700000000000002, 16.018107096354164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a234de8-d64e-4c79-945a-d1731aa58ae6" absoluteBounds="5.125, 2.375, 2, 5.4246240234375">
+      <DataClassMoniker Name="/ReporteDataContext/PERSO_DB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55485a4a-86ee-4d31-ad3f-27dd18bfd62b" absoluteBounds="5.1400000000000006, 2.835, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.5 : 9.44138834635417); (4.875 : 9.44138834635417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ReporteDataContext/NOTV_DB/NOTV_DB_NOTV_control" />
+      <nodes>
+        <classShapeMoniker Id="6e67c03f-334c-400e-a401-a22f86a346db" />
+        <classShapeMoniker Id="b4a02958-7821-4a0c-b32a-25f1b22df4e5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 11.7490055338542); (7.5 : 11.7490055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ReporteDataContext/CLIEN_DB/CLIEN_DB_NOTV_DB" />
+      <nodes>
+        <classShapeMoniker Id="c87a34f4-b432-4ad9-ba02-c793a568831b" />
+        <classShapeMoniker Id="6e67c03f-334c-400e-a401-a22f86a346db" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.125 : 5.08731201171875); (7.5 : 5.08731201171875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ReporteDataContext/PERSO_DB/PERSO_DB_NOTV_DB" />
+      <nodes>
+        <classShapeMoniker Id="5a234de8-d64e-4c79-945a-d1731aa58ae6" />
+        <classShapeMoniker Id="6e67c03f-334c-400e-a401-a22f86a346db" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

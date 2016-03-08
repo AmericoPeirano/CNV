@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GL_GROUP" Class="ReporteDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=PATO-PC;Initial Catalog=GL_GROUP;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GL_GROUPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NOTV_control" Member="NOTV_control">
+    <Type Name="NOTV_control">
+      <Column Name="Id_Principal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nota_venta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sup_Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sup_fecha_Pendiente" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sup_fecha_Aprobacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sup_fecha_Termino" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bod_Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bod_fecha_Pendiente" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bod_fecha_Preparacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bod_fecha_Terminado" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bod_fecha_Laboratorio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Preparador" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Lab_Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lab_fecha_pendiente" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Lab_fecha_PorRevisar" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Lab_fecha_Revisado" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fac_Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fac_fecha_Pendiente" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fac_fecha_Por_Facturar" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fac_fecha_Facturado" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Des_Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Des_fecha_Pendiente" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Des_fecha_Por_Despachar" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Des_fecha_Despacho" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sector" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Bultos_pequeños" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bultos_medianos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bultos_grandes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Conductor" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Numero_factura_o_Guia" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Numero_factura_o_Guia1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Numero_factura_o_Guia2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Numero_factura_o_Guia3" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Numero_factura_o_Guia4" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Numero_factura_o_Guia5" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Checked" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Despachado" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Despachador" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Observaciones" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Sektor" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Disponible" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipoDoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="NOTV_DB_NOTV_control" Member="NOTV_DB" ThisKey="nota_venta" OtherKey="NUMNOTA" Type="NOTV_DB" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NOTV_DB" Member="NOTV_DB">
+    <Type Name="NOTV_DB">
+      <Column Name="NUMREG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NUMNOTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FECHA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NRUTCLIE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NRUTFACT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RUTFACT" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="CODVEND" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MONEDA" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DCTOPJE" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="TOTNETO" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="DCTOTIPO" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="DCTOPESO" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="TASACBIO" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="USERMODI" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="IVA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FECHAMODIF" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OBSDESP" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="OBSFACT" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="OBSGRAL" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CTACONTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CENTROCO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NUMORD" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="COMISION" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="NUMCOTI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOTANOTV" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FORMPAGO" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="NUMORDEN" Type="System.Decimal" DbType="Decimal(16,0)" CanBeNull="true" />
+      <Column Name="GLOSACON" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PAGOAN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DIRDESP" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NUMEMPVT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TIPONTAV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TOTIVA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DOCPAGO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SUCUR" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PROCESONUM" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIPONV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ATT" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="APROBADA" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="IMP1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IMPRESA" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="JDD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NVSUC" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="CONTARR" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+      <Column Name="OBRA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NUMORDC" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ID_IMAGEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DOCGEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="NOTV_DB_NOTV_control" Member="NOTV_control" ThisKey="NUMNOTA" OtherKey="nota_venta" Type="NOTV_control" />
+      <Association Name="CLIEN_DB_NOTV_DB" Member="CLIEN_DB" ThisKey="NRUTCLIE" OtherKey="NREGUIST" Type="CLIEN_DB" IsForeignKey="true" />
+      <Association Name="PERSO_DB_NOTV_DB" Member="PERSO_DB" ThisKey="CODVEND" OtherKey="NUMREG" Type="PERSO_DB" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CLIEN_DB" Member="CLIEN_DB">
+    <Type Name="CLIEN_DB">
+      <Column Name="NREGUIST" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RAZSOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RUT" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="IMPUTABLE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="TIPO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TRANSPORTE" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="RAZSOC2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DIR" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="COMUNA" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CIUDAD" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="FONO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="FAX" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CLASE1" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CLASE2" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CLASE3" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CLASE4" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="XX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YY" Type="System.Decimal" DbType="Decimal(16,11)" CanBeNull="true" />
+      <Column Name="NIVEL1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL3" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL4" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL5" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL6" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL7" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL8" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NIVEL9" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FORMAP" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="DIASPAGO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCONT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCTO" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="BLOQUEA" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CODVENDE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="COBRADOR" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="COMENT" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="GIRO" Type="System.String" DbType="VarChar(90)" CanBeNull="true" />
+      <Column Name="ELIMINADO" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CATEDESC" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CRED_APR" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="CRED_UTI" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="MOROSID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRTOT" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+      <Column Name="CONTRMNY" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRDESDE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRTX" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FIJO" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="XXBAK" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YYBAK" Type="System.Decimal" DbType="Decimal(16,11)" CanBeNull="true" />
+      <Column Name="FECHACRE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECH1VTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECULVTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHULTCON" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHAMODIF" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CONTRFIN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USERMODI" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="FECHGARR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHCRED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RELACIONAD" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BASEDATOS" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FECH1CON" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DIRE_OK" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DIRE_ERROR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TERMOM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ART_FACP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NUNCA_BLOQ" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CLAVE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PARENT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="JDD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RUTADUANA" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CLILP" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="CASELEC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dimaxpag" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="F_Ultima_Visita" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CL_CTA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLTESUCUR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLTEELECTR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CTACTECLIEPROV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLASE5" Type="System.String" DbType="Char(40)" CanBeNull="true" />
+      <Column Name="TIPODCTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DIR2" Type="System.String" DbType="Char(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CORRCLTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CLIEN_DB_NOTV_DB" Member="NOTV_DB" ThisKey="NREGUIST" OtherKey="NRUTCLIE" Type="NOTV_DB" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERSO_DB" Member="PERSO_DB">
+    <Type Name="PERSO_DB">
+      <Column Name="NUMREG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CODIGO" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDO" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="CARGO" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="FIRMA" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="VENDEDOR" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="COBRADOR" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="MECANICO" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="CONDUCTOR" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="OBS" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DIACUMPLE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MESCUMPLE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="COMIS_COMI" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="COMIS_MESO" Type="System.Decimal" DbType="Decimal(9,2)" CanBeNull="true" />
+      <Column Name="FINIQUITO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GRUPO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MAIL" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MAILCEL" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="JDD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PERLP" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="PERSUC" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="perbod" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="BARRCOD" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Association Name="PERSO_DB_NOTV_DB" Member="NOTV_DB" ThisKey="NUMREG" OtherKey="CODVEND" Type="NOTV_DB" />
+    </Type>
+  </Table>
+</Database>

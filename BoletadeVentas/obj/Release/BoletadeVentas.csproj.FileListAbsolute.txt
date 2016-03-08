@@ -1,0 +1,7 @@
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\bin\BoletadeVentas.dll
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\bin\BoletadeVentas.pdb
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\obj\Release\BoletadeVentas.dll.licenses
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\obj\Release\RdlCompile.cache
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\obj\Release\RdlCompile.compiled
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\obj\Release\BoletadeVentas.dll
+C:\Users\glgroup\Desktop\Sistema Update\BoletadeVentas\BoletadeVentas\obj\Release\BoletadeVentas.pdb
