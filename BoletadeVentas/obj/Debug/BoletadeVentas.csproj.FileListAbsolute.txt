@@ -44,7 +44,9 @@ C:\Users\apeirano\Desktop\Sistema Update12\BoletadeVentas\BoletadeVentas\obj\Deb
 C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\bin\BoletadeVentas.dll
 C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\bin\BoletadeVentas.pdb
 C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\obj\Debug\BoletadeVentas.csprojResolveAssemblyReference.cache
-C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\obj\Debug\RdlCompile.cache
-C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\obj\Debug\RdlCompile.compiled
 C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\obj\Debug\BoletadeVentas.dll
 C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\obj\Debug\BoletadeVentas.pdb
+C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\bin\BoletadeVentas.dll.config
+C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Informatica\Desktop\Carpetas\BoletadeVentas\BoletadeVentas\bin\Microsoft.ReportViewer.WebForms.xml
